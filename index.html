@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pizza Ordering App</title>
+
+    <link rel="stylesheet" href="pizza.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+<div class="pizza-decoration one">🌿</div>
+<div class="pizza-decoration two">🍅</div>
+<div class="pizza-decoration three">🌿</div>
+<div class="pizza-decoration four">🧀</div>
+    <div class="container">
+
+        <div class="pizza-card">
+
+            <div class="pizza-icon">
+
+
+            </div>
+
+            <h1>Pizza House</h1>
+
+            <p class="subtitle">
+                Order your favorite pizza
+            </p>
+
+
+            <!-- Customer name -->
+
+            <div class="form-group">
+
+                <label for="customerName">
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Enter your name"
+                >
+
+                <small id="nameError"></small>
+
+            </div>
+
+
+            <!-- Pizza selection -->
+
+            <div class="form-group">
+
+                <label for="pizzaType">
+                    Choose Your Pizza
+                </label>
+
+                <select id="pizzaType">
+
+                    <option value="Margherita">
+                        🍅 Margherita
+                    </option>
+
+                    <option value="Pepperoni">
+                        🥩 Pepperoni
+                    </option>
+
+                    <option value="Cheese">
+                        🧀 Cheese
+                    </option>
+
+                    <option value="Vegetable">
+                        🥦 Vegetable
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Size -->
+
+            <div class="form-group">
+
+                <label for="pizzaSize">
+                    Choose Size
+                </label>
+
+                <select id="pizzaSize">
+
+                    <option value="Small">
+                        Small - $5
+                    </option>
+
+                    <option value="Medium">
+                        Medium - $8
+                    </option>
+
+                    <option value="Large">
+                        Large - $12
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Order button -->
+
+            <button id="orderBtn">
+
+                Order Pizza 🍕
+
+            </button>
+
+
+            <!-- Loading -->
+
+            <div id="loading">
+
+                👨‍🍳 Preparing your pizza...
+
+            </div>
+
+
+            <!-- Result -->
+
+            <div id="result"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="pizza.js"></script>
+
+</body>
+
+</html>
